@@ -1,5 +1,5 @@
-import { BarTask } from '../interfaces/barTask';
-import { Task } from '../interfaces/publicTypes';
+import { BarTask } from '../types/barTask';
+import { Task } from '../types/publicTypes';
 import React from 'react';
 
 export function isKeyboardEvent(

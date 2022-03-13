@@ -1,6 +1,6 @@
 import React, { memo } from 'react';
-import { BarTask } from '../../../interfaces/barTask';
-import { GanttEvent } from '../../../interfaces/ganttTaskActions';
+import { BarTask } from '../../../types/barTask';
+import { GanttEvent } from '../../../types/ganttTaskActions';
 import { TaskItem, TaskItemProps } from './TaskItem';
 
 interface GanttItemsProps {

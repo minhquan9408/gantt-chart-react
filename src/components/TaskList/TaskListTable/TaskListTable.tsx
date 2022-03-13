@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './taskListTable.module.css';
-import { Task } from '../../../interfaces/publicTypes';
-import { GanttEvent } from '../../../interfaces/ganttTaskActions';
+import { Task } from '../../../types/publicTypes';
+import { GanttEvent } from '../../../types/ganttTaskActions';
 import TaskListTableItem from './TaskListTableItem';
 
 //Can use useMemo to optimize performance

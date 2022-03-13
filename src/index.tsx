@@ -17,11 +17,11 @@ ReactDOM.render(
 reportWebVitals();
 
 export { Gantt } from './components/Gantt';
-export { ViewMode } from './interfaces/publicTypes';
+export { ViewMode } from './types/publicTypes';
 export type {
   GanttProps,
   Task,
   StylingOption,
   DisplayOption,
   EventOption,
-} from './interfaces/publicTypes';
+} from './types/publicTypes';

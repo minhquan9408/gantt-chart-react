@@ -1,4 +1,4 @@
-import { Task, ViewMode } from '../interfaces/publicTypes';
+import { Task, ViewMode } from '../types/publicTypes';
 import DateTimeFormatOptions = Intl.DateTimeFormatOptions;
 import DateTimeFormat = Intl.DateTimeFormat;
 

@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { BarTask } from '../../../interfaces/barTask';
+import { BarTask } from '../../../types/barTask';
 import {
   GanttContentMoveAction,
   GanttEvent,
-} from '../../../interfaces/ganttTaskActions';
+} from '../../../types/ganttTaskActions';
 import { Bar } from './Bar/Bar';
 import { BarSmall } from './Bar/BarSmall';
 import { Milestone } from './Milestone/Milestone';

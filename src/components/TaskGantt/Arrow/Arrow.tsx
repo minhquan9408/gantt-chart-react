@@ -1,6 +1,6 @@
 import React from 'react';
-import { BarTask } from '../../../interfaces/barTask';
-import { GanttEvent } from '../../../interfaces/ganttTaskActions';
+import { BarTask } from '../../../types/barTask';
+import { GanttEvent } from '../../../types/ganttTaskActions';
 
 export type ArrowProps = {
   taskFrom: BarTask;

@@ -1,5 +1,5 @@
 import React, { ReactChild } from 'react';
-import { ViewMode } from '../../../interfaces/publicTypes';
+import { ViewMode } from '../../../types/publicTypes';
 import { TopPartOfCalendar } from './TopPartOfCalendar';
 import {
   getCachedDateTimeFormat,
@@ -7,8 +7,8 @@ import {
   getLocalDayOfWeek,
   getLocaleMonth,
   getWeekNumberISO8601,
-} from '../../../utils/dateHelper';
-import { DateSetup } from '../../../interfaces/dateSetup';
+} from '../../../interfaces/dateHelper';
+import { DateSetup } from '../../../types/dateSetup';
 import styles from './calendar.module.css';
 
 export type CalendarProps = {

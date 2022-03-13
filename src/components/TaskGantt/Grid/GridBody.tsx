@@ -1,9 +1,11 @@
 import React, { memo, ReactChild } from 'react';
-import { Task, ViewMode } from '../../../interfaces/publicTypes';
-import { addToDate } from '../../../utils/dateHelper';
+import { Task, ViewMode } from '../../../types/publicTypes';
+import { addToDate } from '../../../interfaces/dateHelper';
 import styles from './grid.module.css';
+import {GanttEvent} from "../../../types/ganttTaskActions";
 
 export type GridBodyProps = {
+  ganttEvent?: GanttEvent;
   viewMode: ViewMode;
   tasks: Task[];
   dates: Date[];
@@ -25,6 +27,7 @@ export const GridBody: React.FC<GridBodyProps> = ({
   todayColor,
   rtl,
 }) => {
+  console.log("RERENDER")
   let y = 0;
   const gridRows: ReactChild[] = [];
   const rowLines: ReactChild[] = [

@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import { Task } from '../../../interfaces/publicTypes';
+import { Task } from '../../../types/publicTypes';
 import styles from './taskListTable.module.css';
 
 interface TaskListTableItemProps {

@@ -1,4 +1,4 @@
-import { Task } from './interfaces/publicTypes';
+import { Task } from './types/publicTypes';
 
 //TEST TASK LIST WITH 10K ENTRIES
 

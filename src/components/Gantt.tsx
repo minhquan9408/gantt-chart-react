@@ -1,20 +1,20 @@
 import React, { useState, SyntheticEvent, useRef, useEffect } from 'react';
-import { ViewMode, GanttProps, Task } from '../interfaces/publicTypes';
-import { GridProps } from './Gantt/Grid/Grid';
-import { ganttDateRange, seedDates } from '../utils/dateHelper';
-import { CalendarProps } from './Gantt/Calendar/Calendar';
-import { TaskGanttContentProps } from './Gantt/TaskGanttContent';
+import { ViewMode, GanttProps, Task } from '../types/publicTypes';
+import { ganttDateRange, seedDates } from '../interfaces/dateHelper';
+import { CalendarProps } from './TaskGantt/Calendar/Calendar';
+import { TaskGanttContentProps } from './TaskGantt/TaskGanttContent';
 import { StandardTooltipContent, Tooltip } from './Other/Tooltip';
 import { VerticalScroll } from './Other/VerticalScroll';
 import { TaskListProps, TaskList } from './TaskList/TaskList';
-import { TaskGantt } from './Gantt/TaskGantt';
-import { BarTask } from '../interfaces/barTask';
-import { convertToBarTasks } from '../utils/barHelper';
-import { GanttEvent } from '../interfaces/ganttTaskActions';
-import { DateSetup } from '../interfaces/dateSetup';
+import { TaskGantt } from './TaskGantt/TaskGantt';
+import { BarTask } from '../types/barTask';
+import { convertToBarTasks } from '../interfaces/barHelper';
+import { GanttEvent } from '../types/ganttTaskActions';
+import { DateSetup } from '../types/dateSetup';
 import styles from './gantt.module.css';
 import { HorizontalScroll } from './Other/HorizontalScroll';
-import { removeHiddenTasks } from '../utils/otherHelper';
+import { removeHiddenTasks } from '../interfaces/otherHelper';
+import {GridBodyProps} from "./TaskGantt/Grid/GridBody";
 
 export const Gantt: React.FC<GanttProps> = ({
   tasks,
@@ -351,7 +351,7 @@ export const Gantt: React.FC<GanttProps> = ({
       onExpanderClick({ ...task, hideChildren: !task.hideChildren });
     }
   };
-  const gridProps: GridProps = {
+  const gridProps: GridBodyProps = {
     viewMode,
     scrollY,
     columnWidth,

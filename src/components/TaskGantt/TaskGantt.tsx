@@ -1,11 +1,12 @@
 import React, { useRef, useEffect } from 'react';
-import { GridProps, Grid } from './Grid/Grid';
+import { Grid } from './Grid/Grid';
 import { CalendarProps, Calendar } from './Calendar/Calendar';
 import { TaskGanttContentProps, TaskGanttContent } from './TaskGanttContent';
 import styles from '../gantt.module.css';
+import {GridBodyProps} from "./Grid/GridBody";
 
 export type TaskGanttProps = {
-  gridProps: GridProps;
+  gridProps: GridBodyProps;
   calendarProps: CalendarProps;
   barProps: TaskGanttContentProps;
   ganttHeight: number;

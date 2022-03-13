@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import { EventOption } from '../../interfaces/publicTypes';
-import { BarTask } from '../../interfaces/barTask';
-import { handleTaskBySVGMouseEvent } from '../../utils/barHelper';
-import { isKeyboardEvent } from '../../utils/otherHelper';
+import { EventOption } from '../../types/publicTypes';
+import { BarTask } from '../../types/barTask';
+import { handleTaskBySVGMouseEvent } from '../../interfaces/barHelper';
+import { isKeyboardEvent } from '../../interfaces/otherHelper';
 import {
   BarMoveAction,
   GanttContentMoveAction,
   GanttEvent,
-} from '../../interfaces/ganttTaskActions';
+} from '../../types/ganttTaskActions';
 import TaskItemList from './TaskItem/TaskItemList';
 import ArrowList from './Arrow/ArrowList';
 import { Arrow } from './Arrow/Arrow';
